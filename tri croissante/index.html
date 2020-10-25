@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        var tab =[8,5,3,10,9,4,7];
+        var temp;
+        for(var i = 0; i < tab.length; i++){
+            for(var j = i + 1; j < tab.length; j++){
+                if(tab[i] > tab[j]){
+                    temp = tab[j]
+                    tab[j] = tab[i]
+                    tab[i] = temp
+                }
+            }
+         }
+        console.log(tab);
+        
+        
+    
+    </script>
+
+</body>
+</html>

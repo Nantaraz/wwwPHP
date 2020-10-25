@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 150px;
+            background-color: beige;
+        }
+        .s {
+            border: 1px solid black;
+            width: 400px;
+            height: 250px;
+            background-color: cadetblue;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="s">
+            <label> entrer n</label>
+            <input type="text" id="blabla"/><br/>
+            <label> entrer i</label>
+            <input type="text" id="blabla1"/><br/>
+            <label> entrer j</label>
+            <input type="text" id="blabla2"/><br/>
+            <label> entrer k</label>
+            <input type="text" id="blabla3"/><br/>
+            <label> n armstrong si i*i*i + j*j*j + k*k*k = n </label><br/>
+            <button class='i' onClick="myFunction()">crypter</button>
+            
+            <div id="k"></div>
+        </div>
+    </center>
+    <script >
+        function myFunction(){
+            var n = document.getElementById("blabla").value;
+            var i = document.getElementById("blabla1").value;
+            var j = document.getElementById("blabla2").value;
+            var k = document.getElementById("blabla3").value;
+            if(i*i*i + j*j*j + k*k*k == n){
+                // document.getElementById("k").innerHTML+= "n armstrong si i*i*i+j*j*j+k*k*k=n,<br/>"
+                document.getElementById("k").innerHTML+= "armstrong"
+            }else{
+                document.getElementById("k").innerHTML+= "n'est pas armstrong"
+            }
+            
+        }
+        
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        var tab = [5,56,15,17,3,8,11,28,55]
+        var t = []
+        var ecart;
+        tab.sort(function(tab1,tab){
+            return tab1 - tab
+        })
+        for (var i = 0; i  < tab.length-1 ; i++){
+            ecart = Math.abs(tab[i] - tab[i+1])
+            t.push(ecart)
+            
+        }
+       t.sort(function(t1,t) {
+           return t1 - t
+       })
+       for (let j = 0; j < t.length; j++) {
+        console.log(t[0]);   
+       }
+          
+    </script>
+</body>
+</html>
